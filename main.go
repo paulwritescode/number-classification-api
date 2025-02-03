@@ -1,13 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"log"
 
 	route "github.com/paulwritescode/numbers-api/router"
 )
 
 func main() {
-	fmt.Println("Numbers classification API running...")
-	fmt.Println("http://localhost:3000")
+	log.Println("Numbers classification API running on port :3000")
 	route.Route()
 }
