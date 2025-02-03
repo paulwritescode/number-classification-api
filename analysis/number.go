@@ -19,17 +19,19 @@ func ReturnNumber(slug string) int32 {
 	//check parity
 	status := parity(&ApiSlug)
 	log.Println(status)
+
 	return ApiSlug
 }
 func parity(ApiSlug *int32) bool {
 	var is_prime bool
+
 	if *ApiSlug%2 == 0 {
 		log.Println("even number")
 		is_prime = false
 	} else {
-
 		is_prime = true
 		log.Println("odd number")
 	}
+
 	return is_prime
 }
