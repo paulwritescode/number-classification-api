@@ -50,7 +50,7 @@ func ReturnNumber(slug int) NumberReturnJson {
 }
 
 func getFunFact(ApiSlug int) string {
-	url := fmt.Sprintf("http://numbersapi.com/%d", ApiSlug)
+	url := fmt.Sprintf("http://numbersapi.com/%d/math", ApiSlug)
 	responce, err := http.Get(url)
 	if err != nil {
 		log.Fatal(err)
